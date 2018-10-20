@@ -56,5 +56,5 @@ def resource_not_found
   flash[:alert] = message
   redirect_to root_path
 end
-
+#before_action :authenticate_user!, except: [:index, :show]
 end
